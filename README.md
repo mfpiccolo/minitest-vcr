@@ -99,3 +99,7 @@ See [LICENSE.txt](LICENSE.txt) for details.
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/mfpiccolo/minitest_vcr/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
