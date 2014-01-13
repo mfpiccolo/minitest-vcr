@@ -32,39 +32,43 @@ The setup below will create a direcotry structre that looks like this:
 
 An example test_helper file: app_name/test/test_helper.rb
 
-    require "minitest/autorun"
-    require "minispec-metadata"
-    require "vcr"
-    require "minitest_vcr"
-    require "webmock"
-    require "mocha/setup"
-    require "faraday"
+```ruby
+require "minitest/autorun"
+require "minispec-metadata"
+require "vcr"
+require "minitest_vcr"
+require "webmock"
+require "mocha/setup"
+require "faraday"
 
-    VCR.configure do |c|
-      c.cassette_library_dir = 'test/cassettes'
-      c.hook_into :webmock
-    end
+VCR.configure do |c|
+  c.cassette_library_dir = 'test/cassettes'
+  c.hook_into :webmock
+end
 
-    MinitestVcr::Spec.configure!
+MinitestVcr::Spec.configure!
+```
 
 An example test file: app_name/test/example_test.rb
 
-    require "test_helper"
+```ruby
+require "test_helper"
 
-    describe Example::Spec do
+describe Example::Spec do
 
-      describe 'an example group', vcr: true do
-        describe 'with a nested example group' do
-          before do
-            conn = Faraday.new
-            @response = conn.get 'http://example.com'
-          end
-          it 'uses a cassette for any examples' do
-            @response.wont_equal nil
-          end
-        end
+  describe 'an example group', vcr: true do
+    describe 'with a nested example group' do
+      before do
+        conn = Faraday.new
+        @response = conn.get 'http://example.com'
+      end
+      it 'uses a cassette for any examples' do
+        @response.wont_equal nil
       end
     end
+  end
+end
+```
 
 ## Requirements
 
