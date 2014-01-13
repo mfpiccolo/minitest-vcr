@@ -1,6 +1,6 @@
 # minitest_vcr
 
-* [Homepage](https://github.com/mfpiccolo/minitest_vcr#readme)
+* [Homepage](http://mfpiccolo.github.io/minitest_vcr)
 * [Issues](https://github.com/mfpiccolo/minitest_vcr/issues)
 * [Documentation](http://rubydoc.info/gems/minitest_vcr/frames)
 * [Email](mailto:mfpiccolo@gmail.com)

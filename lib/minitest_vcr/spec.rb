@@ -3,6 +3,7 @@ require "minispec-metadata"
 
 module MinitestVcr
   module Spec
+
     def self.configure!
       run_before = lambda do |example|
         if metadata[:vcr]
@@ -18,8 +19,8 @@ module MinitestVcr
       end
 
       ::MiniTest::Spec.before :each, &run_before
-
       ::MiniTest::Spec.after :each, &run_after
     end
-  end # Callable
-end # SoftService
+
+  end # Spec
+end # MinitestVcr
