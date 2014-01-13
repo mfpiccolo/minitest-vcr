@@ -107,3 +107,7 @@ See [LICENSE.txt](LICENSE.txt) for details.
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/mfpiccolo/minitest-vcr/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/mfpiccolo/minitest-vcr/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
