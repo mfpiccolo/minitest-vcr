@@ -1,13 +1,13 @@
-# minitest_vcr
+# minitest-vcr
 
-* [Homepage](http://mfpiccolo.github.io/minitest_vcr)
-* [Issues](https://github.com/mfpiccolo/minitest_vcr/issues)
-* [Documentation](http://rubydoc.info/gems/minitest_vcr/frames)
+* [Homepage](http://mfpiccolo.github.io/minitest-vcr)
+* [Issues](https://github.com/mfpiccolo/minitest-vcr/issues)
+* [Documentation](http://rubydoc.info/gems/minitest-vcr/frames)
 * [Email](mailto:mfpiccolo@gmail.com)
 
 ## Description
 
-Allows VCR to automatically make cassets with proper file paths using Minitest.
+Allows VCR to automatically make cassetes with proper file paths using Minitest.
 
 ## Features
 
@@ -36,7 +36,7 @@ An example test_helper file: app_name/test/test_helper.rb
 require "minitest/autorun"
 require "minispec-metadata"
 require "vcr"
-require "minitest_vcr"
+require "minitest-vcr"
 require "webmock"
 require "mocha/setup"
 require "faraday"
@@ -78,7 +78,7 @@ end
 Add this line to your application's Gemfile:
 
 ```ruby
-gem "minitest_vcr"
+gem "minitest-vcr"
 ```
 
 And then execute:
@@ -87,7 +87,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install minitest_vcr
+    $ gem install minitest-vcr
 
 
 ## Copyright
@@ -98,12 +98,12 @@ See [LICENSE.txt](LICENSE.txt) for details.
 
 ## Contributing
 
-1. Fork it ( http://github.com/<my-github-username>/minitest_vcr/fork )
+1. Fork it ( http://github.com/<my-github-username>/minitest-vcr/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
 
 
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/mfpiccolo/minitest_vcr/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/mfpiccolo/minitest-vcr/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 

@@ -17,7 +17,7 @@ end
 require "minitest/autorun"
 require "minispec-metadata"
 require "vcr"
-require "minitest_vcr"
+require "minitest-vcr"
 require "webmock"
 require "mocha/setup"
 require "faraday"

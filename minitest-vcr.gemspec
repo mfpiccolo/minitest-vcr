@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'minitest_vcr/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "minitest_vcr"
+  spec.name          = "minitest-vcr"
   spec.version       = MinitestVcr::VERSION
   spec.authors       = ["Mike Piccolo"]
   spec.email         = ["mpiccolo@newleaders.com"]
