@@ -104,10 +104,5 @@ See [LICENSE.txt](LICENSE.txt) for details.
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
 
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/mfpiccolo/minitest-vcr/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
-
-
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/mfpiccolo/minitest-vcr/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
