@@ -59,7 +59,9 @@ require "test_helper"
 
 describe Example::Spec do
 
-  describe 'an example group', vcr: true do
+  # Notice here symbols are treated as true values
+  # You could also do vcr: true
+  describe 'an example group', :vcr do
     describe 'with a nested example group' do
       before do
         conn = Faraday.new
