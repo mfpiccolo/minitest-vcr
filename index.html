@@ -34,12 +34,46 @@
           <h1>
 <a name="minitest-vcr" class="anchor" href="#minitest-vcr"><span class="octicon octicon-link"></span></a>minitest-vcr</h1>
 
-<ul>
-<li><a href="http://mfpiccolo.github.io/minitest-vcr">Homepage</a></li>
-<li><a href="https://github.com/mfpiccolo/minitest-vcr/issues">Issues</a></li>
-<li><a href="http://rubydoc.info/gems/minitest-vcr/frames">Documentation</a></li>
-<li><a href="mailto:mfpiccolo@gmail.com">Email</a></li>
-</ul><h2>
+<table>
+<thead><tr>
+<th>Project</th>
+<th>Gem Release</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Gem name</td>
+<td>minitest-vcr</td>
+</tr>
+<tr>
+<td>License</td>
+<td><a href="LICENSE.txt">MIT</a></td>
+</tr>
+<tr>
+<td>Version</td>
+<td><a href="http://badge.fury.io/rb/minitest-vcr"><img src="https://badge.fury.io/rb/minitest-vcr.png" alt="Gem Version"></a></td>
+</tr>
+<tr>
+<td>Continuous Integration</td>
+<td><a href="https://travis-ci.org/mfpiccolo/minitest-vcr"><img src="https://travis-ci.org/mfpiccolo/minitest-vcr.png?branch=master" alt="Build Status"></a></td>
+</tr>
+<tr>
+<td>Test Coverage</td>
+<td><a href="https://coveralls.io/r/mfpiccolo/minitest-vcr?branch=coveralls"><img src="https://coveralls.io/repos/mfpiccolo/minitest-vcr/badge.png?branch=coveralls" alt="Coverage Status"></a></td>
+</tr>
+<tr>
+<td>Homepage</td>
+<td><a href="http://mfpiccolo.github.io/minitest-vcr">http://mfpiccolo.github.io/minitest-vcr</a></td>
+</tr>
+<tr>
+<td>Documentation</td>
+<td><a href="http://rdoc.info/github/mfpiccolo/minitest-vcr/frames">http://rdoc.info/github/mfpiccolo/minitest-vcr/frames</a></td>
+</tr>
+<tr>
+<td>Issues</td>
+<td><a href="https://github.com/mfpiccolo/minitest-vcr/issues">https://github.com/mfpiccolo/minitest-vcr/issues</a></td>
+</tr>
+</tbody>
+</table><h2>
 <a name="description" class="anchor" href="#description"><span class="octicon octicon-link"></span></a>Description</h2>
 
 <p>Allows VCR to automatically make cassetes with proper file paths using Minitest.</p>
@@ -92,7 +126,9 @@
 
 <span class="n">describe</span> <span class="no">Example</span><span class="o">::</span><span class="no">Spec</span> <span class="k">do</span>
 
-  <span class="n">describe</span> <span class="s1">'an example group'</span><span class="p">,</span> <span class="ss">vcr</span><span class="p">:</span> <span class="kp">true</span> <span class="k">do</span>
+  <span class="c1"># Notice here symbols are treated as true values</span>
+  <span class="c1"># You could also do vcr: true</span>
+  <span class="n">describe</span> <span class="s1">'an example group'</span><span class="p">,</span> <span class="ss">:vcr</span> <span class="k">do</span>
     <span class="n">describe</span> <span class="s1">'with a nested example group'</span> <span class="k">do</span>
       <span class="n">before</span> <span class="k">do</span>
         <span class="n">conn</span> <span class="o">=</span> <span class="no">Faraday</span><span class="o">.</span><span class="n">new</span>
@@ -126,6 +162,11 @@
 
 <pre><code>$ gem install minitest-vcr
 </code></pre>
+
+<h2>
+<a name="donating" class="anchor" href="#donating"><span class="octicon octicon-link"></span></a>Donating</h2>
+
+<p>Support this project and <a href="https://www.gittip.com/mfpiccolo/">others by mfpiccolo</a> via <a href="https://www.gittip.com/mfpiccolo/">gittip</a>.</p>
 
 <h2>
 <a name="copyright" class="anchor" href="#copyright"><span class="octicon octicon-link"></span></a>Copyright</h2>
