@@ -1,4 +1,7 @@
-# minitest-vcr
+minitest-vcr
+============
+
+[![Build Status](https://travis-ci.org/mfpiccolo/minitest-vcr.png?branch=master)](https://travis-ci.org/mfpiccolo/minitest-vcr)
 
 * [Homepage](http://mfpiccolo.github.io/minitest-vcr)
 * [Issues](https://github.com/mfpiccolo/minitest-vcr/issues)
