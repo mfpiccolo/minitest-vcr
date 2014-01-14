@@ -1,12 +1,15 @@
 minitest-vcr
 ============
-
-[![Build Status](https://travis-ci.org/mfpiccolo/minitest-vcr.png?branch=master)](https://travis-ci.org/mfpiccolo/minitest-vcr)
-
-* [Homepage](http://mfpiccolo.github.io/minitest-vcr)
-* [Issues](https://github.com/mfpiccolo/minitest-vcr/issues)
-* [Documentation](http://rubydoc.info/gems/minitest-vcr/frames)
-* [Email](mailto:mfpiccolo@gmail.com)
+| Project                 |  Gem Release      |
+|------------------------ | ----------------- |
+| Gem name                |  minitest-vcr      |
+| License                 |  [MIT](LICENSE.txt)   |
+| Version                 |  [![Gem Version](https://badge.fury.io/rb/minitest-vcr.png)](http://badge.fury.io/rb/minitest-vcr) |
+| Continuous Integration  |  [![Build Status](https://travis-ci.org/mfpiccolo/minitest-vcr.png?branch=master)](https://travis-ci.org/mfpiccolo/minitest-vcr)
+| Test Coverage           |  [![Coverage Status](https://coveralls.io/repos/mfpiccolo/minitest-vcr/badge.png)](https://coveralls.io/r/mfpiccolo/minitest-vcr) |
+| Homepage                |  [http://mfpiccolo.github.io/minitest-vcr][homepage] |
+| Documentation           |  [http://rdoc.info/github/mfpiccolo/minitest-vcr/frames][documentation] |
+| Issues                  |  [https://github.com/mfpiccolo/minitest-vcr/issues][issues] |
 
 ## Description
 
@@ -114,4 +117,9 @@ See [LICENSE.txt](LICENSE.txt) for details.
 5. Create new Pull Request
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/mfpiccolo/minitest-vcr/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
+[license]: https://github.com/mfpiccolo/minitest-vcr/MIT-LICENSE
+[homepage]: http://mfpiccolo.github.io/minitest-vcr
+[documentation]: http://rdoc.info/github/mfpiccolo/minitest-vcr/frames
+[issues]: https://github.com/mfpiccolo/minitest-vcr/issues
 
