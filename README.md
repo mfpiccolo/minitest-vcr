@@ -92,6 +92,10 @@ Or install it yourself as:
 
     $ gem install minitest-vcr
 
+## Donating
+Support this project and [others by mfpiccolo][gittip-mfpiccolo] via [gittip][gittip-mfpiccolo].
+
+[gittip-mfpiccolo]: https://www.gittip.com/mfpiccolo/
 
 ## Copyright
 
