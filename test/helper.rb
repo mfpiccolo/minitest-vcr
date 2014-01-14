@@ -1,3 +1,6 @@
+require 'coveralls'
+Coveralls.wear!
+
 begin
   require "bundler"
 rescue LoadError => e
