@@ -117,7 +117,7 @@ See [LICENSE.txt](LICENSE.txt) for details.
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
 
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/mfpiccolo/minitest-vcr/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+[![githalytics.com alpha](https://cruel-carlota.pagodabox.com/e1a155a07163d56ca0c4f246c7aa8766 "githalytics.com")](http://githalytics.com/mfpiccolo/minitest-vcr)
 
 [license]: https://github.com/mfpiccolo/minitest-vcr/MIT-LICENSE
 [homepage]: http://mfpiccolo.github.io/minitest-vcr
