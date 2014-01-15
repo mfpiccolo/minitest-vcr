@@ -1,5 +1,6 @@
 require "vcr"
 require "minispec-metadata"
+require "extensions/string"
 
 module MinitestVcr
   module Spec
@@ -7,18 +8,18 @@ module MinitestVcr
     def self.configure!
       run_before = lambda do |example|
         if metadata[:vcr]
-          example.class.name.scan(/^(.*?)::[abc]/) do |name|
-            @class_name = name.first
+
+          example.class.name.scan(/^(.*?)::[abc]/) do |class_names|
+            class_name = class_names.first
+
+            if class_name.nil?
+              @path = example.class.name.prep
+            else
+              @path = example.class.name.gsub(class_name, "").prep.unshift(class_name)
+            end
           end
 
-          if @class_name.nil?
-            test_info = example.class.name.split("::").map {|e| e.sub(/[^\w]*$/, "")}.reject(&:empty?) - ["vcr"]
-            @class_name = ""
-          else
-            test_info = example.class.name.gsub(@class_name, "").split("::").map {|e| e.sub(/[^\w]*$/, "")}.reject(&:empty?) - ["vcr"]
-          end
-
-          VCR.insert_cassette @class_name + "/" + test_info.join("/") + "/#{spec_name}"
+          VCR.insert_cassette @path.push(spec_name).join("/") unless @path.nil?
         end
       end
 
