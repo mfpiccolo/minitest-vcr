@@ -8,6 +8,7 @@ minitest-vcr
 | Continuous Integration  |  [![Build Status](https://travis-ci.org/mfpiccolo/minitest-vcr.png?branch=master)](https://travis-ci.org/mfpiccolo/minitest-vcr)
 | Test Coverage           |  [![Coverage Status](https://coveralls.io/repos/mfpiccolo/minitest-vcr/badge.png?branch=master)](https://coveralls.io/r/mfpiccolo/minitest-vcr?branch=coveralls)
 | Grade                   |  [![Code Climate](https://codeclimate.com/github/mfpiccolo/minitest-vcr.png)](https://codeclimate.com/github/mfpiccolo/minitest-vcr)
+| Dependencies            |  [![Dependency Status](https://gemnasium.com/mfpiccolo/minitest-vcr.png)](https://gemnasium.com/mfpiccolo/metaforce)
 | Homepage                |  [http://mfpiccolo.github.io/minitest-vcr][homepage] |
 | Documentation           |  [http://rdoc.info/github/mfpiccolo/minitest-vcr/frames][documentation] |
 | Issues                  |  [https://github.com/mfpiccolo/minitest-vcr/issues][issues] |
@@ -15,8 +16,6 @@ minitest-vcr
 ## Description
 
 Allows VCR to automatically make cassetes with proper file paths using Minitest.
-
-## Features
 
 ## Examples
 
