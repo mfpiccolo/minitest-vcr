@@ -24,7 +24,7 @@ Two main steps:
 1.  Install and require the gem
 2.  Add `MinitestVcr::Spec.configure!` before your tests load
 
-The setup below will create a direcotry structre that looks like this:
+The setup below will create a directory structre that looks like this:
 
     |-- app_name
     |  |-- test/
