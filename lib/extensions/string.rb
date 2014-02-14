@@ -1,7 +1,7 @@
 class String
 
   def vcr_path(example, spec_name)
-    self.scan(/^(.*?)::[abc]/) do |class_names|
+    self.scan(/^(.*?)::[#a-z]/) do |class_names|
       class_name = class_names.flatten.first
 
       if class_name.nil?
