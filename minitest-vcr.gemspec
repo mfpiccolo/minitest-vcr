@@ -18,7 +18,7 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
-  spec.add_dependency "vcr",                            "~> 2.8.0"
+  spec.add_dependency "vcr",                            "~> 2.9.0"
   spec.add_dependency "minitest",                       ">= 4.7.5"
   spec.add_dependency "minispec-metadata",              "~> 2.0.0"
 
@@ -30,7 +30,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "faraday",            "~> 0.8.9"
   spec.add_development_dependency "rubygems-tasks",     "~> 0.2"
   spec.add_development_dependency "yard",               "~> 0.8"
-  spec.add_development_dependency "webmock",            "~> 1.16.0"
+  spec.add_development_dependency "webmock",            "~> 1.17.0"
   spec.add_development_dependency "pry",                " ~> 0.9.12.2"
   spec.add_development_dependency "pry-debugger",       "~> 0.2.2"
 end
