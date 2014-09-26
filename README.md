@@ -75,6 +75,19 @@ describe Example::Spec do
       end
     end
   end
+
+  # setting config
+  describe 'an example group', vcr: { record: :all } do
+    describe 'with a nested example group' do
+      before do
+        conn = Faraday.new
+        @response = conn.get 'http://example.com'
+      end
+      it 'uses a cassette for any examples' do
+        @response.wont_equal nil
+      end
+    end
+  end
 end
 ```
 
