@@ -35,6 +35,9 @@ describe MinitestVcr::Spec do
           'uses a cassette for any examples'
         ])
       end
+      it 'can supply metadata', vcr: {record: :all} do
+        VCR.current_cassette.record_mode.must_equal :all
+      end
     end
   end
 
