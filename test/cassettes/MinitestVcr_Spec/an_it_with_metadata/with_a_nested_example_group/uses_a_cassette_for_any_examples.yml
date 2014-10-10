@@ -8,11 +8,11 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday v0.8.9
+      - Faraday v0.9.0
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - ! '*/*'
+      - "*/*"
   response:
     status:
       code: 200
@@ -25,15 +25,15 @@ http_interactions:
       Content-Type:
       - text/html
       Date:
-      - Wed, 15 Jan 2014 16:51:18 GMT
+      - Fri, 10 Oct 2014 06:26:07 GMT
       Etag:
-      - ! '"359670651"'
+      - '"359670651"'
       Expires:
-      - Wed, 22 Jan 2014 16:51:18 GMT
+      - Fri, 17 Oct 2014 06:26:07 GMT
       Last-Modified:
       - Fri, 09 Aug 2013 23:54:35 GMT
       Server:
-      - ECS (sjc/4FCE)
+      - ECS (rhv/818F)
       X-Cache:
       - HIT
       X-Ec-Custom-Error:
@@ -41,8 +41,8 @@ http_interactions:
       Content-Length:
       - '1270'
     body:
-      encoding: US-ASCII
-      string: ! "<!doctype html>\n<html>\n<head>\n    <title>Example Domain</title>\n\n
+      encoding: UTF-8
+      string: "<!doctype html>\n<html>\n<head>\n    <title>Example Domain</title>\n\n
         \   <meta charset=\"utf-8\" />\n    <meta http-equiv=\"Content-type\" content=\"text/html;
         charset=utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width,
         initial-scale=1\" />\n    <style type=\"text/css\">\n    body {\n        background-color:
@@ -60,5 +60,5 @@ http_interactions:
         or asking for permission.</p>\n    <p><a href=\"http://www.iana.org/domains/example\">More
         information...</a></p>\n</div>\n</body>\n</html>\n"
     http_version: 
-  recorded_at: Wed, 15 Jan 2014 16:51:17 GMT
-recorded_with: VCR 2.8.0
+  recorded_at: Fri, 10 Oct 2014 06:26:07 GMT
+recorded_with: VCR 2.9.3

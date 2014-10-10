@@ -29,4 +29,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rubygems-tasks",     "~> 0.2"
   spec.add_development_dependency "yard",               "~> 0.8"
   spec.add_development_dependency "webmock",            "~> 1.17"
+  spec.add_development_dependency "pry-byebug"
 end
