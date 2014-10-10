@@ -25,11 +25,11 @@ http_interactions:
       Content-Type:
       - text/html
       Date:
-      - Fri, 10 Oct 2014 06:26:07 GMT
+      - Fri, 10 Oct 2014 06:26:50 GMT
       Etag:
       - '"359670651"'
       Expires:
-      - Fri, 17 Oct 2014 06:26:07 GMT
+      - Fri, 17 Oct 2014 06:26:50 GMT
       Last-Modified:
       - Fri, 09 Aug 2013 23:54:35 GMT
       Server:
@@ -60,5 +60,5 @@ http_interactions:
         or asking for permission.</p>\n    <p><a href=\"http://www.iana.org/domains/example\">More
         information...</a></p>\n</div>\n</body>\n</html>\n"
     http_version: 
-  recorded_at: Fri, 10 Oct 2014 06:26:07 GMT
+  recorded_at: Fri, 10 Oct 2014 06:26:50 GMT
 recorded_with: VCR 2.9.3

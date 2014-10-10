@@ -25,7 +25,11 @@ module MinitestVcr
   module StringHelpers
 
     def self.vcr_path(example_class_name, example, spec_name)
+      # TODO Refactor!  To tired but this is wack.
+      @path = nil
+
       example_class_name.scan(/^(.*?)::[#a-z]/) do |class_names|
+
         class_name = class_names.flatten.first
 
         if class_name.nil?
@@ -33,6 +37,10 @@ module MinitestVcr
         else
           @path = prep(example.class.name.gsub(class_name, "")).unshift(class_name)
         end
+      end
+
+      if @path.nil?
+        @path = prep example.class.name
       end
 
       @path.push(spec_name).join("/") unless @path.nil?
