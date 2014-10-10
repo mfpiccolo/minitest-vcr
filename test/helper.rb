@@ -24,7 +24,6 @@ require "minitest-vcr"
 require "webmock"
 require "mocha/setup"
 require "faraday"
-require "pry"
 
 VCR.configure do |c|
   c.cassette_library_dir = 'test/cassettes'
