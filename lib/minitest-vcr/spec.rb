@@ -25,12 +25,7 @@ module MinitestVcr
   module StringHelpers
 
     def self.vcr_path(example_class_name, example, spec_name)
-      # TODO Refactor!  To tired but this is wack.
-      @path = nil
-
-      @path = prep example.class.name
-
-      @path.push(spec_name).join("/") unless @path.nil?
+      prep(example.class.name).push(spec_name).join("/")
     end
 
     protected
