@@ -9,12 +9,12 @@ describe MinitestVcr::Spec, :vcr => {:tag => :some_tag, :match_requests_on => [:
   end
 
   it "top level example" do
-    VCR.current_cassette.name.must_equal "MinitestVcr/Spec/top level example"
+    VCR.current_cassette.name.must_equal "MinitestVcr::Spec/top level example"
   end
 
   describe "nested describe" do
     it "example in nested describe" do
-      VCR.current_cassette.name.must_equal "MinitestVcr/Spec/nested describe/example in nested describe"
+      VCR.current_cassette.name.must_equal "MinitestVcr::Spec/nested describe/example in nested describe"
     end
   end
 

@@ -8,7 +8,7 @@ module MinitestVcr
       run_before = lambda do |example|
         if metadata[:vcr]
           options = metadata[:vcr].is_a?(Hash) ? metadata[:vcr] : {}
-          VCR.insert_cassette StringHelpers.vcr_path(example.class.name, example, spec_name), options
+          VCR.insert_cassette StringHelpers.vcr_path(example, spec_name), options
         end
       end
 
@@ -24,14 +24,22 @@ module MinitestVcr
 
   module StringHelpers
 
-    def self.vcr_path(example_class_name, example, spec_name)
-      prep(example.class.name).push(spec_name).join("/")
+    def self.vcr_path(example, spec_name)
+      description_stack(example).push(spec_name).join("/")
     end
 
     protected
 
-    def self.prep string
-      string.split("::").map {|e| e.sub(/[^\w]*$/, "")}.reject(&:empty?) - ["vcr"]
+    def self.description_stack(example)
+      frame = example.class
+      stack = []
+
+      while frame != Minitest::Spec do
+        stack.unshift frame.desc.to_s
+        frame = frame.superclass
+      end
+
+      return stack
     end
 
   end
