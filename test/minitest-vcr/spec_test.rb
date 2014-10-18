@@ -12,8 +12,7 @@ describe MinitestVcr::Spec do
       end
       it 'uses a cassette for any examples' do
         (VCR.current_cassette.name.split('/')).must_equal([
-          'MinitestVcr',
-          'Spec',
+          'MinitestVcr::Spec',
           'a describe with metadata',
           'with a nested example group',
           'uses a cassette for any examples'
@@ -30,8 +29,7 @@ describe MinitestVcr::Spec do
       end
       it 'uses a cassette for any examples', :vcr do
         (VCR.current_cassette.name.split('/')).must_equal([
-          'MinitestVcr',
-          'Spec',
+          'MinitestVcr::Spec',
           'an it with metadata',
           'with a nested example group',
           'uses a cassette for any examples'
