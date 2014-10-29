@@ -19,3 +19,18 @@ describe MinitestVcr::Spec, :vcr => {:tag => :some_tag, :match_requests_on => [:
   end
 
 end
+
+
+describe "top level describe", :vcr do    
+  describe "an inner describe" do
+    it "a test inside inner describe" do
+      conn = Faraday.new
+      @response = conn.get "http://example.com"
+
+      VCR.current_cassette.name.must_equal "top level describe/an inner describe/a test inside inner describe"
+    end
+  end
+
+  it "makes a request succesfully" do
+  end
+end
