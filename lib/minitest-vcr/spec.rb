@@ -55,3 +55,24 @@ module MinitestVcr
 
   end
 end # MinitestVcr
+
+class ActiveSupport::TestCase
+  def before_setup
+    super
+    if self.class.name.match("::vcr::")
+      base_path = self.class.name.split("::")
+        .map {|p| p.underscore.gsub(" ", "_") unless p == "vcr" }.join("/")
+
+      file_name = name.gsub(/^test_.\d+_/, " ").strip.gsub(" ", "_")
+      VCR.insert_cassette(base_path + "/" + file_name)
+    end
+  end
+
+  def after_teardown
+    if self.class.name.match("::vcr::")
+      ::VCR.eject_cassette
+    end
+    super
+  end
+end
+
