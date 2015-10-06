@@ -133,6 +133,6 @@ See [LICENSE.txt](LICENSE.txt) for details.
 
 [license]: https://github.com/mfpiccolo/minitest-vcr/MIT-LICENSE
 [homepage]: http://mfpiccolo.github.io/minitest-vcr
-[documentation]: http://rdoc.info/github/mfpiccolo/minitest-vcr/frames
+[documentation]: http://www.rubydoc.info/gems/minitest-vcr
 [issues]: https://github.com/mfpiccolo/minitest-vcr/issues
 
