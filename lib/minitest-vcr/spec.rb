@@ -3,23 +3,24 @@ require "minispec-metadata"
 
 module MinitestVcr
   module Spec
-
-    def self.configure!
-      run_before = lambda do |example|
+    module SetupAndTeardown
+      def setup
+        super
         if metadata[:vcr]
           options = metadata[:vcr].is_a?(Hash) ? metadata[:vcr] : {}
-          VCR.insert_cassette StringHelpers.vcr_path(example), options
+          VCR.insert_cassette StringHelpers.vcr_path(self), options
         end
       end
 
-      run_after = lambda do |example|
+      def teardown
+        super
         ::VCR.eject_cassette if metadata[:vcr]
       end
-
-      ::MiniTest::Spec.before :each, &run_before
-      ::MiniTest::Spec.after :each, &run_after
     end
 
+    def self.configure!
+      ::MiniTest::Spec.send(:include, SetupAndTeardown)
+    end
   end # Spec
 
   module StringHelpers
