@@ -19,6 +19,7 @@ end
 
 require "minitest/autorun"
 require "minispec-metadata"
+require "active_support/testing/metadata"
 require "vcr"
 require "minitest-vcr"
 require "webmock"
