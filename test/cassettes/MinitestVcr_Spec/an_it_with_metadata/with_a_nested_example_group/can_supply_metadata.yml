@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday v0.9.1
+      - Faraday v0.15.2
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -23,25 +23,25 @@ http_interactions:
       Cache-Control:
       - max-age=604800
       Content-Type:
-      - text/html
+      - text/html; charset=UTF-8
       Date:
-      - Tue, 31 Mar 2015 20:03:52 GMT
+      - Sun, 09 Sep 2018 01:24:50 GMT
       Etag:
-      - '"359670651"'
+      - '"1541025663+gzip"'
       Expires:
-      - Tue, 07 Apr 2015 20:03:52 GMT
+      - Sun, 16 Sep 2018 01:24:50 GMT
       Last-Modified:
       - Fri, 09 Aug 2013 23:54:35 GMT
       Server:
-      - ECS (sjc/16A4)
+      - ECS (ord/4CB8)
+      Vary:
+      - Accept-Encoding
       X-Cache:
       - HIT
-      X-Ec-Custom-Error:
-      - '1'
       Content-Length:
-      - '1270'
+      - '606'
     body:
-      encoding: UTF-8
+      encoding: ASCII-8BIT
       string: "<!doctype html>\n<html>\n<head>\n    <title>Example Domain</title>\n\n
         \   <meta charset=\"utf-8\" />\n    <meta http-equiv=\"Content-type\" content=\"text/html;
         charset=utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width,
@@ -60,5 +60,5 @@ http_interactions:
         or asking for permission.</p>\n    <p><a href=\"http://www.iana.org/domains/example\">More
         information...</a></p>\n</div>\n</body>\n</html>\n"
     http_version: 
-  recorded_at: Tue, 31 Mar 2015 20:03:52 GMT
-recorded_with: VCR 2.9.3
+  recorded_at: Sun, 09 Sep 2018 01:24:50 GMT
+recorded_with: VCR 4.0.0
