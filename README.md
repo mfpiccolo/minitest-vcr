@@ -5,7 +5,7 @@ minitest-vcr
 | Gem name                |  minitest-vcr      |
 | License                 |  [MIT](LICENSE.txt)   |
 | Version                 |  [![Gem Version](https://badge.fury.io/rb/minitest-vcr.svg)](https://badge.fury.io/rb/minitest-vcr) |
-| Continuous Integration  |  [![Build Status](https://travis-ci.com/mfpiccolo/minitest-vcr.svg?branch=master)](https://travis-ci.com/mfpiccolo/minitest-vcr)
+| Continuous Integration  |  [![Build Status](https://travis-ci.org/mfpiccolo/minitest-vcr.svg?branch=master)](https://travis-ci.org/mfpiccolo/minitest-vcr)
 | Test Coverage           |  [![Coverage Status](https://coveralls.io/repos/github/mfpiccolo/minitest-vcr/badge.svg?branch=master)](https://coveralls.io/github/mfpiccolo/minitest-vcr?branch=master)
 | Grade                   |  [![Maintainability](https://api.codeclimate.com/v1/badges/9627118e4e89447cb51a/maintainability)](https://codeclimate.com/github/mfpiccolo/minitest-vcr/maintainability)
 | Homepage                |  [http://mfpiccolo.github.io/minitest-vcr][homepage] |
