@@ -43,13 +43,9 @@ describe MinitestVcr::Spec do
 
   describe "#configure!", :vcr do
 
-    before do
-      ::MiniTest::Spec.expects(:before).with(:each)
-      ::MiniTest::Spec.expects(:after).with(:each)
-    end
-
-    it "should call before and after with proper args and block" do
+    it "should include setup and teardown module into Minitest::Spec" do
       MinitestVcr::Spec.configure!
+      Minitest::Spec.included_modules.must_include(MinitestVcr::Spec::SetupAndTeardown)
     end
   end
 end
