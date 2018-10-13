@@ -19,10 +19,6 @@ rescue Bundler::BundlerError => e
 end
 
 require 'rake'
-
-require 'rubygems/tasks'
-Gem::Tasks.new
-
 require 'rake/testtask'
 
 Rake::TestTask.new do |test|
@@ -36,4 +32,3 @@ YARD::Rake::YardocTask.new
 task :doc => :yard
 
 task :default => :test
-
