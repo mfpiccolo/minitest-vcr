@@ -1,34 +1,17 @@
-# encoding: utf-8
+# frozen_string_literal: true
 
-require 'rubygems'
-
-begin
-  require 'bundler'
-rescue LoadError => e
-  warn e.message
-  warn "Run `gem install bundler` to install Bundler."
-  exit -1
-end
-
-begin
-  Bundler.setup(:development)
-rescue Bundler::BundlerError => e
-  warn e.message
-  warn "Run `bundle install` to install missing gems."
-  exit e.status_code
-end
-
-require 'rake'
+require 'bundler/gem_tasks'
 require 'rake/testtask'
 
-Rake::TestTask.new do |test|
-  test.libs << 'test'
-  test.pattern = 'test/**/*_test.rb'
-  test.verbose = true
+Rake::TestTask.new(:test) do |t|
+  t.libs << 'test'
+  t.libs << 'lib'
+  t.test_files = FileList['test/**/*_test.rb']
+  t.verbose = true
 end
+
+task default: :test
 
 require 'yard'
 YARD::Rake::YardocTask.new
-task :doc => :yard
-
-task :default => :test
+task doc: :yard
