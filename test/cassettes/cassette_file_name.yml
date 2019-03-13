@@ -23,15 +23,15 @@ http_interactions:
       Content-Type:
       - text/html; charset=UTF-8
       Date:
-      - Wed, 13 Mar 2019 04:05:25 GMT
+      - Wed, 13 Mar 2019 04:01:42 GMT
       Etag:
       - '"1541025663+gzip"'
       Expires:
-      - Wed, 20 Mar 2019 04:05:25 GMT
+      - Wed, 20 Mar 2019 04:01:42 GMT
       Last-Modified:
       - Fri, 09 Aug 2013 23:54:35 GMT
       Server:
-      - ECS (sec/96DC)
+      - ECS (sec/97A6)
       Vary:
       - Accept-Encoding
       X-Cache:
@@ -58,5 +58,5 @@ http_interactions:
         or asking for permission.</p>\n    <p><a href=\"http://www.iana.org/domains/example\">More
         information...</a></p>\n</div>\n</body>\n</html>\n"
     http_version: 
-  recorded_at: Wed, 13 Mar 2019 04:05:25 GMT
+  recorded_at: Wed, 13 Mar 2019 04:01:42 GMT
 recorded_with: VCR 4.0.0

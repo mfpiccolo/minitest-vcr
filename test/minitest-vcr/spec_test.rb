@@ -41,6 +41,23 @@ describe MinitestVcr::Spec do
     end
   end
 
+  describe 'cassette_name metadata' do
+
+    let(:cassette_name) { "cassette_file_name" }
+
+    before do
+      conn = Faraday.new
+      @response = conn.get 'http://example.com'
+    end
+
+    it 'uses a cassette for any examples', vcr: {cassette_name: "cassette_file_name" } do
+      (VCR.current_cassette.name.split('/')).must_equal([
+        cassette_name
+      ])
+    end
+
+  end
+
   describe "#configure!", :vcr do
 
     before do
