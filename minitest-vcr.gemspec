@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = MinitestVcr::VERSION
   spec.authors       = ["Mike Piccolo"]
   spec.email         = ["mpiccolo@newleaders.com"]
-  spec.summary       = "Allows VCR to automatically make cassetes with proper file paths with MiniTest"
-  spec.description   = "I like MiniTest.  I like VCR.  I like not having to manage cassetes."
+  spec.summary       = "Allows VCR to automatically make cassetes with proper file paths with minitest"
+  spec.description   = "I like minitest. I like VCR. I like not having to manage cassetes."
   spec.homepage      = ""
   spec.license       = "MIT"
 
@@ -19,8 +19,8 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_dependency "vcr",                            ">= 2.9"
-  spec.add_dependency "minitest",                       ">= 4.7.5"
-  spec.add_dependency "minispec-metadata",              "~> 2.0"
+  spec.add_dependency "minitest",                       ">= 5.19.0"
+  spec.add_dependency "minispec-metadata",              ">= 2.0"
 
   spec.add_development_dependency "bundler",            "~> 1.5"
   spec.add_development_dependency "rake",               "~> 10.0"

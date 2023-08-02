@@ -44,8 +44,8 @@ describe MinitestVcr::Spec do
   describe "#configure!", :vcr do
 
     before do
-      ::MiniTest::Spec.expects(:before).with(:each)
-      ::MiniTest::Spec.expects(:after).with(:each)
+      ::Minitest::Spec.expects(:before).with(:each)
+      ::Minitest::Spec.expects(:after).with(:each)
     end
 
     it "should call before and after with proper args and block" do
