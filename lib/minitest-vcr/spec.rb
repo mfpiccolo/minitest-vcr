@@ -16,8 +16,8 @@ module MinitestVcr
         ::VCR.eject_cassette if metadata[:vcr]
       end
 
-      ::MiniTest::Spec.before :each, &run_before
-      ::MiniTest::Spec.after :each, &run_after
+      ::Minitest::Spec.before :each, &run_before
+      ::Minitest::Spec.after :each, &run_after
     end
 
   end # Spec
